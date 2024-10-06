@@ -275,21 +275,21 @@ var EDimSum;
 
 var router = (0, react_router_dom__WEBPACK_IMPORTED_MODULE_8__/* .createBrowserRouter */.aj)([
     {
-        path: '/:menu',
+        path: '/daphne-and-yoga/:menu',
         element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_menu__WEBPACK_IMPORTED_MODULE_4__/* .Menu */.v, {})
     },
     {
-        path: '/roo-roo-and-yoga',
+        path: '/daphne-and-yoga/roo-roo-and-yoga',
         element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_admin__WEBPACK_IMPORTED_MODULE_5__/* .Admin */.w, {})
     },
     {
-        path: '/invalid',
+        path: '/daphne-and-yoga/invalid',
         element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_invalid_page__WEBPACK_IMPORTED_MODULE_3__/* .InvalidPage */.f, {})
     },
     {
         path: '/',
         element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__/* .Navigate */.Fg, {
-            to: "/invalid",
+            to: "/daphne-and-yoga/invalid",
             replace: true
         })
     }
