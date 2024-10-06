@@ -255,13 +255,14 @@ var EDimSum;
 /* harmony import */var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("246");
 /* harmony import */var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("378");
 /* harmony import */var react_dom_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("634");
-/* harmony import */var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("783");
-/* harmony import */var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("935");
-/* harmony import */var mobx_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("649");
+/* harmony import */var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("783");
+/* harmony import */var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("935");
+/* harmony import */var mobx_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("649");
 /* harmony import */var container_invalid_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("474");
 /* harmony import */var container_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("845");
-/* harmony import */var styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("77");
-/* harmony import */var _index_less__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("821");
+/* harmony import */var container_admin__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("678");
+/* harmony import */var styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("77");
+/* harmony import */var _index_less__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("821");
 
 
 
@@ -271,10 +272,15 @@ var EDimSum;
 
 
 
-var router = (0, react_router_dom__WEBPACK_IMPORTED_MODULE_7__/* .createBrowserRouter */.aj)([
+
+var router = (0, react_router_dom__WEBPACK_IMPORTED_MODULE_8__/* .createBrowserRouter */.aj)([
     {
         path: '/:menu',
         element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_menu__WEBPACK_IMPORTED_MODULE_4__/* .Menu */.v, {})
+    },
+    {
+        path: '/roo-roo-and-yoga',
+        element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_admin__WEBPACK_IMPORTED_MODULE_5__/* .Admin */.w, {})
     },
     {
         path: '/invalid',
@@ -282,15 +288,15 @@ var router = (0, react_router_dom__WEBPACK_IMPORTED_MODULE_7__/* .createBrowserR
     },
     {
         path: '/',
-        element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__/* .Navigate */.Fg, {
+        element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__/* .Navigate */.Fg, {
             to: "/invalid",
             replace: true
         })
     }
 ]);
-var Main = (0, mobx_react__WEBPACK_IMPORTED_MODULE_9__/* .observer */.Pi)(()=>{
+var Main = (0, mobx_react__WEBPACK_IMPORTED_MODULE_10__/* .observer */.Pi)(()=>{
     return /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_7__/* .RouterProvider */.pG, {
+        children: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__/* .RouterProvider */.pG, {
             router: router
         })
     });
@@ -302,6 +308,53 @@ var renderApp = ()=>{
     }));
 };
 renderApp();
+}),
+"678": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+__webpack_require__.d(__webpack_exports__, {
+  w: function() { return Admin; }
+});
+/* harmony import */var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("246");
+/* harmony import */var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("378");
+/* harmony import */var types_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("471");
+/* harmony import */var _index_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("12");
+
+
+
+
+var Admin = ()=>{
+    return /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        className: "admin",
+        children: Object.keys(types_menu__WEBPACK_IMPORTED_MODULE_2__/* .EMenu */.C3).map((menuType, i)=>/*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                children: [
+                    /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                        className: "admin-main",
+                        children: menuType
+                    }),
+                    Object.keys(types_menu__WEBPACK_IMPORTED_MODULE_2__/* .EDimSum */.IO).map((dimSum, j)=>/*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "admin-dim-sum",
+                            children: [
+                                "+ ",
+                                dimSum,
+                                ' ',
+                                /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+                                    target: "_blank",
+                                    href: `https://tharain.github.io/daphne-and-yoga/${btoa(`${menuType}xxxcnxxx${dimSum}`)}`,
+                                    rel: "noreferrer",
+                                    children: "中文"
+                                }),
+                                ' ',
+                                /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+                                    target: "_blank",
+                                    href: `https://tharain.github.io/daphne-and-yoga/${btoa(`${menuType}xxxenxxx${dimSum}`)}`,
+                                    rel: "noreferrer",
+                                    children: "English"
+                                })
+                            ]
+                        }, j))
+                ]
+            }, i))
+    });
+};
 }),
 "474": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 __webpack_require__.d(__webpack_exports__, {
@@ -416,6 +469,9 @@ var Menu = ()=>{
 };
 }),
 "821": (function (module, __unused_webpack_exports, __webpack_require__) {
+__webpack_require__.r(module.exports = {});
+}),
+"12": (function (module, __unused_webpack_exports, __webpack_require__) {
 __webpack_require__.r(module.exports = {});
 }),
 "837": (function (module, __unused_webpack_exports, __webpack_require__) {
