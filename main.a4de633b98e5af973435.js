@@ -7,8 +7,6 @@ module.exports = __webpack_require__.p + "baa81b56d8125ae5ba9b.otf";}),
 module.exports = __webpack_require__.p + "2e65cc128b9bcbbd3cdd.ttf";}),
 "22": (function (module, __unused_webpack_exports, __webpack_require__) {
 module.exports = __webpack_require__.p + "77ffed2b7ca20fbb8a87.ttf";}),
-"39": (function (module, __unused_webpack_exports, __webpack_require__) {
-module.exports = __webpack_require__.p + "aeeef82c14cd7768e9e1.ttf";}),
 "200": (function (module, __unused_webpack_exports, __webpack_require__) {
 module.exports = __webpack_require__.p + "b9a229c4caee3d8c0f27.ttf";}),
 "17": (function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -465,19 +463,21 @@ var Config = {
         title: '今天的菜单',
         menuList: container_menu_constant_cn__WEBPACK_IMPORTED_MODULE_5__/* .baseCnMenu */.UJ,
         footer: container_menu_constant_cn__WEBPACK_IMPORTED_MODULE_5__/* .cnFooter */.DY,
-        subTitle: '小点心'
+        subTitle: '小点心',
+        heart: '♡'
     },
     [types_menu__WEBPACK_IMPORTED_MODULE_2__/* .ELanguage.en */.Df.en]: {
         title: "Today's Menu",
         menuList: container_menu_constant__WEBPACK_IMPORTED_MODULE_4__/* .baseEnMenu */.c,
         footer: container_menu_constant__WEBPACK_IMPORTED_MODULE_4__/* .enFooter */.rU,
-        subTitle: 'Small Token'
+        subTitle: 'Small Token',
+        heart: 'xo'
     }
 };
 var Menu = ()=>{
     var menu = (0, react_router_dom__WEBPACK_IMPORTED_MODULE_7__/* .useParams */.UO)().menu;
     var _ref = (0, _utils__WEBPACK_IMPORTED_MODULE_3__/* .digestMenu */.F)(menu) || {}, realMenu = _ref.realMenu, language = _ref.language, dimsum = _ref.dimsum;
-    var _Config_language = Config[language], title = _Config_language.title, menuList = _Config_language.menuList, footer = _Config_language.footer, subTitle = _Config_language.subTitle;
+    var _Config_language = Config[language], title = _Config_language.title, menuList = _Config_language.menuList, footer = _Config_language.footer, subTitle = _Config_language.subTitle, heart = _Config_language.heart;
     var dimSumList = language === types_menu__WEBPACK_IMPORTED_MODULE_2__/* .ELanguage.cn */.Df.cn ? container_menu_constant_cn__WEBPACK_IMPORTED_MODULE_5__/* .baseCnDimSum */.qm : container_menu_constant__WEBPACK_IMPORTED_MODULE_4__/* .baseEnDimSum */.W7;
     var fullMenu = menuList[realMenu];
     return /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
@@ -495,7 +495,7 @@ var Menu = ()=>{
                         children: [
                             /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
                                 className: "heart",
-                                children: "♡"
+                                children: heart
                             }),
                             " ",
                             item.label
