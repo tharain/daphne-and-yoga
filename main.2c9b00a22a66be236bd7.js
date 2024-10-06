@@ -114,7 +114,7 @@ __webpack_require__.d(__webpack_exports__, {
 var baseEnMenu = {
     [types_menu__WEBPACK_IMPORTED_MODULE_0__/* .EMenu.menu_lilac */.C3.menu_lilac]: [
         {
-            label: 'Trio platter\nDeep-fried wasabi mayo prawn\nCharcoal-roasted duck with cherry sauce\nDrunken chicken in Hua Diao, osmanthus and rose dew wine'
+            label: 'Trio platter\n\xa0\xa0\xa0\xa0Deep-fried wasabi mayo prawn\n\xa0\xa0\xa0\xa0Charcoal-roasted duck with cherry sauce\n\xa0\xa0\xa0\xa0Drunken chicken in Hua Diao, osmanthus and rose dew wine'
         },
         {
             label: 'Imperial hot and sour soup with lobster and sliced abalone'
@@ -134,7 +134,7 @@ var baseEnMenu = {
     ],
     [types_menu__WEBPACK_IMPORTED_MODULE_0__/* .EMenu.menu_lilac_non_spicy */.C3.menu_lilac_non_spicy]: [
         {
-            label: 'Trio platter\nDeep-fried wasabi mayo prawn\nCharcoal-roasted duck with cherry sauce\nDrunken chicken in Hua Diao, osmanthus and rose dew wine'
+            label: 'Trio platter\n\xa0\xa0\xa0\xa0Deep-fried wasabi mayo prawn\n\xa0\xa0\xa0\xa0Charcoal-roasted duck with cherry sauce\n\xa0\xa0\xa0\xa0Drunken chicken in Hua Diao, osmanthus and rose dew wine'
         },
         {
             label: '??? - wildcard dish in replacement of spicy dish'
@@ -174,7 +174,7 @@ var baseEnMenu = {
     ],
     [types_menu__WEBPACK_IMPORTED_MODULE_0__/* .EMenu.menu_veg */.C3.menu_veg]: [
         {
-            label: 'Vegetarian combination\nSteamed crystal dumpling with black truffle\nCrispy beancurd skin roll with matsutake and vegetables\nCrispy mushroom in sweet and sour sauce'
+            label: 'Vegetarian combination\n\xa0\xa0\xa0\xa0Steamed crystal dumpling with black truffle\n\xa0\xa0\xa0\xa0Crispy beancurd skin roll with matsutake and vegetables\n\xa0\xa0\xa0\xa0Crispy mushroom in sweet and sour sauce'
         },
         {
             label: 'Double-boiled bamboo pith, morel mushroom and snow fungus'
