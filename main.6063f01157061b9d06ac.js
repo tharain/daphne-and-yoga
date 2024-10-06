@@ -527,7 +527,7 @@ var Menu = ()=>{
                 }) : null,
                 /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
                     className: "menu-footer",
-                    children: isSolemnizer ? '~ Thank you for solemnizing our wedding! ~\nYoga & Daphne' : footer
+                    children: isSolemnizer ? '~ Thank you for solemnizing our marriage! ~\nYoga & Daphne' : footer
                 })
             ]
         })
