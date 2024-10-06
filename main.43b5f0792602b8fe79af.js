@@ -351,14 +351,14 @@ var Admin = ()=>{
                                 ' ',
                                 /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
                                     target: "_blank",
-                                    href: `https://tharain.github.io/daphne-and-yoga/menu/${btoa(`${menuType}xxxcnxxx${dimSum}`)}`,
+                                    href: `https://tharain.github.io/daphne-and-yoga/#/menu/${btoa(`${menuType}xxxcnxxx${dimSum}`)}`,
                                     rel: "noreferrer",
                                     children: "中文"
                                 }),
                                 ' ',
                                 /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
                                     target: "_blank",
-                                    href: `https://tharain.github.io/daphne-and-yoga/menu/${btoa(`${menuType}xxxenxxx${dimSum}`)}`,
+                                    href: `https://tharain.github.io/daphne-and-yoga/#/menu/${btoa(`${menuType}xxxenxxx${dimSum}`)}`,
                                     rel: "noreferrer",
                                     children: "English"
                                 })
