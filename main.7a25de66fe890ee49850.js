@@ -255,7 +255,8 @@ var digestMenu = (str)=>{
         return {
             realMenu: digestedStr[0],
             language: digestedStr[1],
-            dimsum: digestedStr.length === 3 ? digestedStr[2] : undefined
+            dimsum: digestedStr.length > 2 ? digestedStr[2] : undefined,
+            isSolemnizer: digestedStr.length === 4 ? digestedStr[3] === 'solemnizer' : false
         };
     } catch (e) {
         window.location.replace('/invalid');
@@ -404,6 +405,13 @@ var Admin = ()=>{
                                     href: `https://tharain.github.io/daphne-and-yoga/#/menu/${btoa(`${menuType}xxxenxxx${dimSum}`)}`,
                                     rel: "noreferrer",
                                     children: "English"
+                                }),
+                                ' ',
+                                /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+                                    target: "_blank",
+                                    href: `https://tharain.github.io/daphne-and-yoga/#/menu/${btoa(`${menuType}xxxenxxx${dimSum}xxxsolemnizer`)}`,
+                                    rel: "noreferrer",
+                                    children: "Solemnizer"
                                 })
                             ]
                         }, j))
@@ -476,7 +484,7 @@ var Config = {
 };
 var Menu = ()=>{
     var menu = (0, react_router_dom__WEBPACK_IMPORTED_MODULE_7__/* .useParams */.UO)().menu;
-    var _ref = (0, _utils__WEBPACK_IMPORTED_MODULE_3__/* .digestMenu */.F)(menu) || {}, realMenu = _ref.realMenu, language = _ref.language, dimsum = _ref.dimsum;
+    var _ref = (0, _utils__WEBPACK_IMPORTED_MODULE_3__/* .digestMenu */.F)(menu) || {}, realMenu = _ref.realMenu, language = _ref.language, dimsum = _ref.dimsum, isSolemnizer = _ref.isSolemnizer;
     var _Config_language = Config[language], title = _Config_language.title, menuList = _Config_language.menuList, footer = _Config_language.footer, subTitle = _Config_language.subTitle, heart = _Config_language.heart;
     var dimSumList = language === types_menu__WEBPACK_IMPORTED_MODULE_2__/* .ELanguage.cn */.Df.cn ? container_menu_constant_cn__WEBPACK_IMPORTED_MODULE_5__/* .baseCnDimSum */.qm : container_menu_constant__WEBPACK_IMPORTED_MODULE_4__/* .baseEnDimSum */.W7;
     var fullMenu = menuList[realMenu];
@@ -519,7 +527,7 @@ var Menu = ()=>{
                 }) : null,
                 /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
                     className: "menu-footer",
-                    children: footer
+                    children: isSolemnizer ? '~ Thank you for solemnizing our wedding! ~\nYoga & Daphne' : footer
                 })
             ]
         })
