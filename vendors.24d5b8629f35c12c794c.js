@@ -14,9 +14,9 @@ __webpack_require__.d(__webpack_exports__, {
   cP: function() { return parsePath; },
   cm: function() { return getResolveToMatches; },
   fp: function() { return matchRoutes; },
-  lX: function() { return createBrowserHistory; },
   p7: function() { return createRouter; },
-  pC: function() { return resolveTo; }
+  pC: function() { return resolveTo; },
+  q_: function() { return createHashHistory; }
 });
 /**
  * @remix-run/router v1.19.2
@@ -17185,7 +17185,7 @@ module.exports = __webpack_require__("577");
 var react__WEBPACK_IMPORTED_MODULE_0___namespace_cache;
 var react_dom__WEBPACK_IMPORTED_MODULE_1___namespace_cache;
 __webpack_require__.d(__webpack_exports__, {
-  aj: function() { return createBrowserRouter; },
+  cP: function() { return createHashRouter; },
   pG: function() { return RouterProvider; }
 });
 /* harmony import */var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("378");
@@ -17430,34 +17430,34 @@ try {
 // no-op
 }
 function createBrowserRouter(routes, opts) {
-    return (0, _remix_run_router__WEBPACK_IMPORTED_MODULE_2__/* .createRouter */.p7)({
+    return createRouter({
         basename: opts == null ? void 0 : opts.basename,
         future: _extends({}, opts == null ? void 0 : opts.future, {
             v7_prependBasename: true
         }),
-        history: (0, _remix_run_router__WEBPACK_IMPORTED_MODULE_2__/* .createBrowserHistory */.lX)({
+        history: createBrowserHistory({
             window: opts == null ? void 0 : opts.window
         }),
         hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
         routes,
-        mapRouteProperties: react_router__WEBPACK_IMPORTED_MODULE_3__/* .UNSAFE_mapRouteProperties */.us,
+        mapRouteProperties: UNSAFE_mapRouteProperties,
         unstable_dataStrategy: opts == null ? void 0 : opts.unstable_dataStrategy,
         unstable_patchRoutesOnNavigation: opts == null ? void 0 : opts.unstable_patchRoutesOnNavigation,
         window: opts == null ? void 0 : opts.window
     }).initialize();
 }
 function createHashRouter(routes, opts) {
-    return createRouter({
+    return (0, _remix_run_router__WEBPACK_IMPORTED_MODULE_2__/* .createRouter */.p7)({
         basename: opts == null ? void 0 : opts.basename,
         future: _extends({}, opts == null ? void 0 : opts.future, {
             v7_prependBasename: true
         }),
-        history: createHashHistory({
+        history: (0, _remix_run_router__WEBPACK_IMPORTED_MODULE_2__/* .createHashHistory */.q_)({
             window: opts == null ? void 0 : opts.window
         }),
         hydrationData: (opts == null ? void 0 : opts.hydrationData) || parseHydrationData(),
         routes,
-        mapRouteProperties: UNSAFE_mapRouteProperties,
+        mapRouteProperties: react_router__WEBPACK_IMPORTED_MODULE_3__/* .UNSAFE_mapRouteProperties */.us,
         unstable_dataStrategy: opts == null ? void 0 : opts.unstable_dataStrategy,
         unstable_patchRoutesOnNavigation: opts == null ? void 0 : opts.unstable_patchRoutesOnNavigation,
         window: opts == null ? void 0 : opts.window

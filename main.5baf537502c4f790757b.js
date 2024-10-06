@@ -273,36 +273,31 @@ var EDimSum;
 
 
 
-var router = (0, react_router_dom__WEBPACK_IMPORTED_MODULE_8__/* .createBrowserRouter */.aj)([
+var router = (0, react_router_dom__WEBPACK_IMPORTED_MODULE_8__/* .createHashRouter */.cP)([
     {
-        path: 'daphne-and-yoga',
+        path: 'menu',
         children: [
             {
-                path: 'menu',
-                children: [
-                    {
-                        path: ':menu',
-                        element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_menu__WEBPACK_IMPORTED_MODULE_4__/* .Menu */.v, {})
-                    }
-                ]
-            },
-            {
-                path: 'roo-roo-and-yoga',
-                element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_admin__WEBPACK_IMPORTED_MODULE_5__/* .Admin */.w, {}),
-                errorElement: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__/* .Navigate */.Fg, {
-                    to: "/invalid",
-                    replace: true
-                })
-            },
-            {
-                path: 'invalid',
-                element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_invalid_page__WEBPACK_IMPORTED_MODULE_3__/* .InvalidPage */.f, {}),
-                errorElement: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__/* .Navigate */.Fg, {
-                    to: "/invalid",
-                    replace: true
-                })
+                path: ':menu',
+                element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_menu__WEBPACK_IMPORTED_MODULE_4__/* .Menu */.v, {})
             }
         ]
+    },
+    {
+        path: '/roo-roo-and-yoga',
+        element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_admin__WEBPACK_IMPORTED_MODULE_5__/* .Admin */.w, {}),
+        errorElement: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__/* .Navigate */.Fg, {
+            to: "/invalid",
+            replace: true
+        })
+    },
+    {
+        path: '/invalid',
+        element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_invalid_page__WEBPACK_IMPORTED_MODULE_3__/* .InvalidPage */.f, {}),
+        errorElement: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__/* .Navigate */.Fg, {
+            to: "/invalid",
+            replace: true
+        })
     },
     {
         path: '/',
