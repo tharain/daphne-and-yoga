@@ -648,7 +648,7 @@ __webpack_require__.O = function (result, chunkIds, fn, priority) {
 })();
 // webpack/runtime/public_path
 (() => {
-__webpack_require__.p = "/";
+__webpack_require__.p = "./";
 
 })();
 // webpack/runtime/css_loading
