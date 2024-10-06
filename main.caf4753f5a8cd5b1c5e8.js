@@ -56,6 +56,26 @@ var baseCnMenu = {
             label: '鳄梨果芝麻香雪'
         }
     ],
+    [types_menu__WEBPACK_IMPORTED_MODULE_0__/* .EMenu.menu_lilac_no_pork */.C3.menu_lilac_no_pork]: [
+        {
+            label: '樱桃特色三拼盘\n\xa0\xa0\xa0\xa0山葵酱虾球\n\xa0\xa0\xa0\xa0碳烧挂炉鸭\n\xa0\xa0\xa0\xa0玫瑰桂花醉酒鸡'
+        },
+        {
+            label: '京城龙虾鲍鱼丝酸辣汤'
+        },
+        {
+            label: '??? - 因为有猪肉，这道菜是百搭牌'
+        },
+        {
+            label: '上汤银鱼白菜苗'
+        },
+        {
+            label: '极品酱海皇炒饭'
+        },
+        {
+            label: '鳄梨果芝麻香雪'
+        }
+    ],
     [types_menu__WEBPACK_IMPORTED_MODULE_0__/* .EMenu.menu_ruby */.C3.menu_ruby]: [
         {
             label: '文火北京烤鸭'
@@ -152,6 +172,26 @@ var baseEnMenu = {
             label: 'Avocado pudding with black sesame ice cream'
         }
     ],
+    [types_menu__WEBPACK_IMPORTED_MODULE_0__/* .EMenu.menu_lilac_no_pork */.C3.menu_lilac_no_pork]: [
+        {
+            label: 'Trio platter\n\xa0\xa0\xa0\xa0Deep-fried wasabi mayo prawn\n\xa0\xa0\xa0\xa0Charcoal-roasted duck with cherry sauce\n\xa0\xa0\xa0\xa0Drunken chicken in Hua Diao, osmanthus and rose dew wine'
+        },
+        {
+            label: 'Imperial hot and sour soup with lobster and sliced abalone'
+        },
+        {
+            label: '??? - wildcard dish'
+        },
+        {
+            label: 'Poached baby cabbage in superior stock topped with silver bait'
+        },
+        {
+            label: 'Seafood fried rice with XO sauce'
+        },
+        {
+            label: 'Avocado pudding with black sesame ice cream'
+        }
+    ],
     [types_menu__WEBPACK_IMPORTED_MODULE_0__/* .EMenu.menu_ruby */.C3.menu_ruby]: [
         {
             label: 'Roasted crispy Peking duck'
@@ -239,6 +279,7 @@ var EMenu;
 (function(EMenu) {
     EMenu["menu_lilac"] = "menu_lilac";
     EMenu["menu_lilac_non_spicy"] = "menu_lilac_non_spicy";
+    EMenu["menu_lilac_no_pork"] = "menu_lilac_no_pork";
     EMenu["menu_ruby"] = "menu_ruby";
     EMenu["menu_veg"] = "menu_veg";
 })(EMenu || (EMenu = {}));
