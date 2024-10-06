@@ -275,21 +275,34 @@ var EDimSum;
 
 var router = (0, react_router_dom__WEBPACK_IMPORTED_MODULE_8__/* .createBrowserRouter */.aj)([
     {
-        path: '/daphne-and-yoga/:menu',
-        element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_menu__WEBPACK_IMPORTED_MODULE_4__/* .Menu */.v, {})
+        path: 'menu',
+        children: [
+            {
+                path: ':menu',
+                element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_menu__WEBPACK_IMPORTED_MODULE_4__/* .Menu */.v, {})
+            }
+        ]
     },
     {
-        path: '/daphne-and-yoga/roo-roo-and-yoga',
-        element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_admin__WEBPACK_IMPORTED_MODULE_5__/* .Admin */.w, {})
+        path: '/roo-roo-and-yoga',
+        element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_admin__WEBPACK_IMPORTED_MODULE_5__/* .Admin */.w, {}),
+        errorElement: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__/* .Navigate */.Fg, {
+            to: "/invalid",
+            replace: true
+        })
     },
     {
-        path: '/daphne-and-yoga/invalid',
-        element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_invalid_page__WEBPACK_IMPORTED_MODULE_3__/* .InvalidPage */.f, {})
+        path: '/invalid',
+        element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(container_invalid_page__WEBPACK_IMPORTED_MODULE_3__/* .InvalidPage */.f, {}),
+        errorElement: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__/* .Navigate */.Fg, {
+            to: "/invalid",
+            replace: true
+        })
     },
     {
         path: '/',
         element: /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__/* .Navigate */.Fg, {
-            to: "/daphne-and-yoga/invalid",
+            to: "/invalid",
             replace: true
         })
     }
@@ -338,14 +351,14 @@ var Admin = ()=>{
                                 ' ',
                                 /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
                                     target: "_blank",
-                                    href: `https://tharain.github.io/daphne-and-yoga/${btoa(`${menuType}xxxcnxxx${dimSum}`)}`,
+                                    href: `https://tharain.github.io/daphne-and-yoga/menu/${btoa(`${menuType}xxxcnxxx${dimSum}`)}`,
                                     rel: "noreferrer",
                                     children: "中文"
                                 }),
                                 ' ',
                                 /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
                                     target: "_blank",
-                                    href: `https://tharain.github.io/daphne-and-yoga/${btoa(`${menuType}xxxenxxx${dimSum}`)}`,
+                                    href: `https://tharain.github.io/daphne-and-yoga/menu/${btoa(`${menuType}xxxenxxx${dimSum}`)}`,
                                     rel: "noreferrer",
                                     children: "English"
                                 })
@@ -633,29 +646,10 @@ __webpack_require__.O = function (result, chunkIds, fn, priority) {
 };
 
 })();
-// webpack/runtime/auto_public_path
+// webpack/runtime/public_path
 (() => {
+__webpack_require__.p = "/";
 
-    var scriptUrl;
-    if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-    var document = __webpack_require__.g.document;
-    if (!scriptUrl && document) {
-      if (document.currentScript) scriptUrl = document.currentScript.src;
-        if (!scriptUrl) {
-          var scripts = document.getElementsByTagName("script");
-              if (scripts.length) {
-                var i = scripts.length - 1;
-                while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
-              }
-        }
-      }
-    
-    // When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration",
-    // or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.',
-    if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-    scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-    __webpack_require__.p = scriptUrl
-    
 })();
 // webpack/runtime/css_loading
 (() => {
