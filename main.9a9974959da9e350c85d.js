@@ -192,6 +192,9 @@ var baseEnMenu = {
         },
         {
             label: 'Avocado pudding with black sesame ice cream'
+        },
+        {
+            label: 'Addon: Peking duck served in two courses\n\xa0\xa0a) Chinese crepes served with spring onion, cucumber and\n\xa0\xa0homemade sauce\n\xa0\xa0b) Duck meat sautéed with spring onion and ginger'
         }
     ],
     [types_menu__WEBPACK_IMPORTED_MODULE_0__/* .EMenu.menu_lilac_no_pork */.C3.menu_lilac_no_pork]: [
@@ -212,6 +215,9 @@ var baseEnMenu = {
         },
         {
             label: 'Avocado pudding with black sesame ice cream'
+        },
+        {
+            label: 'Addon: Peking duck served in two courses\n\xa0\xa0a) Chinese crepes served with spring onion, cucumber and\n\xa0\xa0homemade sauce\n\xa0\xa0b) Duck meat sautéed with spring onion and ginger'
         }
     ],
     [types_menu__WEBPACK_IMPORTED_MODULE_0__/* .EMenu.menu_ruby */.C3.menu_ruby]: [
@@ -232,6 +238,9 @@ var baseEnMenu = {
         },
         {
             label: 'Yam paste with bird’s nest in homemade almond cream'
+        },
+        {
+            label: 'Addon: Peking duck served in two courses\n\xa0\xa0a) Chinese crepes served with spring onion, cucumber and\n\xa0\xa0homemade sauce\n\xa0\xa0b) Duck meat sautéed with spring onion and ginger'
         }
     ],
     [types_menu__WEBPACK_IMPORTED_MODULE_0__/* .EMenu.menu_veg */.C3.menu_veg]: [
@@ -249,6 +258,9 @@ var baseEnMenu = {
         },
         {
             label: 'Chilled mango cream with chia seeds, pomelo and lime sorbet'
+        },
+        {
+            label: 'Addon: Peking duck served in two courses\n\xa0\xa0a) Chinese crepes served with spring onion, cucumber and\n\xa0\xa0homemade sauce\n\xa0\xa0b) Duck meat sautéed with spring onion and ginger'
         }
     ]
 };
