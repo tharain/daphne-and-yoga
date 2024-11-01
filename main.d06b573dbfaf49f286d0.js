@@ -46,7 +46,7 @@ var baseCnMenu = {
     ],
     [types_menu__WEBPACK_IMPORTED_MODULE_0__/* .EMenu.menu_lilac_non_spicy */.C3.menu_lilac_non_spicy]: [
         {
-            label: '樱桃特色三拼盘\n\xa0\xa0\xa0\xa0\xa0山葵酱虾球\n\xa0\xa0\xa0\xa0\xa0碳烧挂炉鸭\n\xa0\xa0\xa0\xa0\xa0玫瑰桂花醉酒鸡'
+            label: '樱桃特色三拼盘\n\xa0\xa0\xa0\xa0\xa0烧火腩\n\xa0\xa0\xa0\xa0\xa0碳烧挂炉鸭\n\xa0\xa0\xa0\xa0\xa0玫瑰桂花醉酒鸡'
         },
         {
             label: '羊肚菌三宝汤'
@@ -58,7 +58,7 @@ var baseCnMenu = {
             label: '上汤银鱼白菜苗'
         },
         {
-            label: '极品酱海皇炒饭'
+            label: '海皇炒饭'
         },
         {
             label: '鳄梨果芝麻香雪'
@@ -72,13 +72,13 @@ var baseCnMenu = {
             label: '樱桃特色三拼盘\n\xa0\xa0\xa0\xa0\xa0山葵酱虾球\n\xa0\xa0\xa0\xa0\xa0碳烧挂炉鸭\n\xa0\xa0\xa0\xa0\xa0玫瑰桂花醉酒鸡'
         },
         {
-            label: '京城龙虾鲍鱼丝酸辣汤'
+            label: '羊肚菌三宝汤'
         },
         {
             label: '生姜丝虫草花蒸鳕鱼'
         },
         {
-            label: '上汤银鱼白菜苗'
+            label: '黄汤蒜子娃娃菜'
         },
         {
             label: '极品酱海皇炒饭'
@@ -176,7 +176,7 @@ var baseEnMenu = {
     ],
     [types_menu__WEBPACK_IMPORTED_MODULE_0__/* .EMenu.menu_lilac_non_spicy */.C3.menu_lilac_non_spicy]: [
         {
-            label: 'Trio platter\n\xa0\xa0\xa0Deep-fried wasabi mayo prawn\n\xa0\xa0\xa0Charcoal-roasted duck with cherry sauce\n\xa0\xa0\xa0Drunken chicken in Hua Diao, osmanthus and rose dew wine'
+            label: 'Trio platter\n\xa0\xa0\xa0Cantonese-style roasted crackling pork belly\n\xa0\xa0\xa0Charcoal-roasted duck with cherry sauce\n\xa0\xa0\xa0Drunken chicken in Hua Diao, osmanthus and rose dew wine'
         },
         {
             label: 'Double-boiled bamboo pith, morel mushroom and snow fungus'
@@ -188,7 +188,7 @@ var baseEnMenu = {
             label: 'Poached baby cabbage in superior stock topped with silver bait '
         },
         {
-            label: 'Seafood fried rice with XO sauce'
+            label: 'Seafood fried rice'
         },
         {
             label: 'Avocado pudding with black sesame ice cream'
@@ -202,13 +202,13 @@ var baseEnMenu = {
             label: 'Trio platter\n\xa0\xa0\xa0\xa0Deep-fried wasabi mayo prawn\n\xa0\xa0\xa0\xa0Charcoal-roasted duck with cherry sauce\n\xa0\xa0\xa0\xa0Drunken chicken in Hua Diao, osmanthus and rose dew wine'
         },
         {
-            label: 'Imperial hot and sour soup with lobster and sliced abalone'
+            label: 'Double-boiled bamboo pith, morel mushroom and snow fungus'
         },
         {
             label: 'Steamed cod fillet with ginger and cordyceps flower\n\xa0\xa0\xa0\xa0in homemade superior soya sauce'
         },
         {
-            label: 'Poached baby cabbage in superior stock topped with silver bait'
+            label: 'Baby cabbage with garlic in golden broth'
         },
         {
             label: 'Seafood fried rice with XO sauce'
@@ -501,13 +501,33 @@ __webpack_require__.d(__webpack_exports__, {
 var Config = {
     [types_menu__WEBPACK_IMPORTED_MODULE_2__/* .ELanguage.cn */.Df.cn]: {
         title: '今天的菜单',
+        drinksTitle: '饮料',
+        drinksSubTitle: '每人从以下选一壶茶：',
         menuList: container_menu_constant_cn__WEBPACK_IMPORTED_MODULE_7__/* .baseCnMenu */.UJ,
+        drinksMenu: [
+            '茉莉龙井茶 - 绿茶',
+            '大红袍乌龙 - 乌龙茶',
+            '铁观音 - 乌龙茶',
+            '普洱茶 - 黑茶',
+            '金猴茶 - 黑茶',
+            '菊花茶 - 花茶'
+        ],
         footer: container_menu_constant_cn__WEBPACK_IMPORTED_MODULE_7__/* .cnFooter */.DY,
         heart: '♡'
     },
     [types_menu__WEBPACK_IMPORTED_MODULE_2__/* .ELanguage.en */.Df.en]: {
         title: "Today's Menu",
+        drinksTitle: "Drink's Menu",
+        drinksSubTitle: 'Each person to pick 1 pot of tea from the following menu:',
         menuList: container_menu_constant__WEBPACK_IMPORTED_MODULE_6__/* .baseEnMenu */.c,
+        drinksMenu: [
+            'Jasmine Dragon Pearl - Green Tea',
+            'Da Hong Pao Oolong - Oolong Tea',
+            'Tie Guan Yin - Oolong Tea',
+            'Pu Erh - Dark Tea',
+            'Golden Monkey - Black Tea',
+            'Chrysanthemum - Flower Tea'
+        ],
         footer: container_menu_constant__WEBPACK_IMPORTED_MODULE_6__/* .enFooter */.rU,
         heart: 'xo'
     }
@@ -527,7 +547,7 @@ var LanguageSwitch = ()=>{
 var Menu = ()=>{
     var menu = (0, react_router_dom__WEBPACK_IMPORTED_MODULE_9__/* .useParams */.UO)().menu;
     var _ref = (0, _utils__WEBPACK_IMPORTED_MODULE_3__/* .digestMenu */.F)(menu) || {}, realMenu = _ref.realMenu, language = _ref.language, isSolemnizer = _ref.isSolemnizer;
-    var _Config_language = Config[language], title = _Config_language.title, menuList = _Config_language.menuList, footer = _Config_language.footer, heart = _Config_language.heart;
+    var _Config_language = Config[language], title = _Config_language.title, drinksTitle = _Config_language.drinksTitle, drinksSubTitle = _Config_language.drinksSubTitle, menuList = _Config_language.menuList, drinksMenu = _Config_language.drinksMenu, footer = _Config_language.footer, heart = _Config_language.heart;
     var fullMenu = menuList[realMenu];
     return /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         className: `menu menu-${language}`,
@@ -552,6 +572,32 @@ var Menu = ()=>{
                                     }),
                                     " ",
                                     item.label
+                                ]
+                            }, i);
+                        }),
+                        /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+                            style: {
+                                borderTop: '3px solid darkgray'
+                            }
+                        }),
+                        /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+                            className: "menu-title",
+                            children: drinksTitle
+                        }),
+                        /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+                            className: "menu-title-item",
+                            children: drinksSubTitle
+                        }),
+                        drinksMenu === null || drinksMenu === void 0 ? void 0 : drinksMenu.map((item, i)=>{
+                            return /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "menu-item",
+                                children: [
+                                    /*#__PURE__*/ (0, react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                                        className: "heart",
+                                        children: heart
+                                    }),
+                                    " ",
+                                    item
                                 ]
                             }, i);
                         }),
